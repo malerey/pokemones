@@ -9,28 +9,32 @@ function Pokemon(n, v, a, pic, g) {
   };
 }
 
+let pokemon = ''
+let g = ''
+let foto = ''
+
 const inicio = poke => {
   if (poke == 'Charmander') {
-    let g = 'Charm!';
-    let foto =
+     g = 'Charm!';
+     foto =
       'http://assets5.pokemon.com/assets/cms2/img/pokedex/detail/004.png';
-    let pokemon = new Pokemon(poke, 100, 60, foto, g);
+    pokemon = new Pokemon(poke, 100, 60, foto, g);
   } else if (poke == 'Squirtle') {
-    let g = 'Squirtle!';
-    let foto =
+     g = 'Squirtle!';
+     foto =
       'http://assets8.pokemon.com/assets/cms2/img/pokedex/detail/007.png';
-    let pokemon = new Pokemon(poke, 130, 50, foto, g);
+    pokemon = new Pokemon(poke, 130, 50, foto, g);
   } else if (poke == 'Bulbasaur') {
-    let g = 'Bulbasaur!';
-    let foto =
+     g = 'Bulbasaur!';
+     foto =
       'http://assets2.pokemon.com/assets/cms2/img/pokedex/detail/001.png';
-    let pokemon = new Pokemon(poke, 110, 55, foto, g);
+    pokemon = new Pokemon(poke, 110, 55, foto, g);
   }
   if (poke == 'Pikachu') {
-    let g = 'Pika!';
-    let foto =
+     g = 'Pika!';
+     foto =
       'http://assets8.pokemon.com/assets/cms2/img/pokedex/detail/025.png';
-    let pokemon = new Pokemon(poke, 95, 65, foto, g);
+    pokemon = new Pokemon(poke, 95, 65, foto, g);
   }
   nombrePokemon.textContent = pokemon.nombre;
   datosPokemon.textContent =
